@@ -1,0 +1,16 @@
+{
+  "name": "redisdata",
+  "version": "1.0.0",
+  "description": "Importar arquivos csv para redis",
+  "type": "module",
+  "private": "true",
+  "scripts": {
+    "load": "node load.js"
+  },
+  "author": "Samuel medino",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "ioredis": "^5.4.1"
+  }
+}
