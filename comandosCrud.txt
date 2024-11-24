@@ -1,0 +1,23 @@
+Create
+hset name:99999 Position "99999" ArtistName “Samuel Medino” SongName “teste” Days “5”
+Top10(xTimes) “15” PeakPosition “45” PeakPosition(xTimes) “4” PeakStreams “8”
+TotalStreams “9”
+
+Read
+Obter todos os campos de um hash: HGETALL name:1
+
+Obter um campo específico de um hash:HGET name:1 ArtistName
+
+Listar todas as chaves que seguem um padrão:KEYS *
+
+Update
+Como os dados em Redis podem ser sobrescritos, você pode simplesmente usar o HSET
+novamente: HSET name:1 Title "Updated Song A"
+
+Para adicionar um novo campo ao hash:HSET name:1 Album "Greatest
+Hits"
+
+Delete
+Excluir um campo específico de um hash:HDEL name:1 Album
+
+Excluir uma chave inteira:DEL name:1
